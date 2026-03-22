@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能地球研究院 | Intelligent Earth Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="nav">
+        <div class="nav-brand">
+            <div class="logo">
+                <svg viewBox="0 0 40 40" class="logo-icon">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <ellipse cx="20" cy="20" rx="8" ry="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="2" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <span>智能地球研究院</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#products">产品矩阵</a></li>
+            <li><a href="#progress">转化进展</a></li>
+            <li><a href="#innovation">技术创新</a></li>
+            <li><a href="#news">行业动态</a></li>
+            <li><a href="#projects">项目案例</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="earth-glow"></div>
+            <div class="stars"></div>
+            <div class="orbital-ring ring-1"></div>
+            <div class="orbital-ring ring-2"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">构建智能地球</span>
+                <span class="title-line accent">定义低空未来</span>
+            </h1>
+            <p class="hero-desc">
+                智能地球研究院专注于时空智能技术研发，以星瞳大模型为核心，<br>
+                构建覆盖"感-传-算-用"全链条的低空经济数字底座
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="7">0</span>
+                    <span class="stat-label">核心产品线</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="50">0</span>
+                    <span class="stat-label">+ 算法模型</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="26">0</span>
+                    <span class="stat-label">重大课题</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="7200">0</span>
+                    <span class="stat-label">万 年度目标</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">探索产品</a>
+                <a href="#progress" class="btn btn-outline">查看进展</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品矩阵 -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Product Matrix</span>
+                <h2 class="section-title">产品矩阵</h2>
+                <p class="section-desc">七大核心产品，构建低空经济全栈技术体系</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- 智能地球 -->
+                <div class="product-card featured" data-product="earth">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 4v40M4 24h40" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>智能地球</h3>
+                        <p class="card-subtitle">Intelligent Earth Platform</p>
+                        <p class="card-desc">三维数字孪生平台，融合时空嵌入场、多智能体协同技术，实现"感-传-算-用"全链路闭环</p>
+                        <div class="card-tags">
+                            <span class="tag">V0.5研发中</span>
+                            <span class="tag">三维可视化</span>
+                            <span class="tag">Agent框架</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span class="progress-text">研发进度 45%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 星瞳大模型 -->
+                <div class="product-card" data-product="model">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="4" fill="currentColor"/><path d="M24 4v8M24 36v8M4 24h8M36 24h8" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>星瞳大模型</h3>
+                        <p class="card-subtitle">Xingtong Large Model</p>
+                        <p class="card-desc">多模态视觉理解大模型，支持视频分析、视觉问答、全要素提取，打造低空场景感知-认知-决策闭环</p>
+                        <div class="card-tags">
+                            <span class="tag tag-primary">V1.5已发布</span>
+                            <span class="tag">多模态</span>
+                            <span class="tag">视频理解</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">研发进度 75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 低空应用算法集 -->
+                <div class="product-card" data-product="algorithm">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48"><rect x="8" y="8" width="14" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="26" y="8" width="14" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="8" y="26" width="14" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="26" y="26" width="14" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>低空应用算法集</h3>
+                        <p class="card-subtitle">Algorithm Library</p>
+                        <p class="card-desc">50+低空场景算法，覆盖高泛化开箱即用与中等泛化定制化双轨能力，支持云边端灵活部署</p>
+                        <div class="card-tags">
+                            <span class="tag tag-primary">V1.5已发布</span>
+                            <span class="tag">50+算法</span>
+                            <span class="tag">场景化封装</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">研发进度 75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 低空训推平台 -->
+                <div class="product-card" data-product="train">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48"><path d="M12 36V12h24v24" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 40V8h32v32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/><circle cx="24" cy="24" r="6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>低空训推平台</h3>
+                        <p class="card-subtitle">Training & Inference Platform</p>
+                        <p class="card-desc">训推一体化平台，支持海光DCU/天数智芯国产化适配，实现智能体技能自动化迭代</p>
+                        <div class="card-tags">
+                            <span class="tag tag-primary">V1.5已发布</span>
+                            <span class="tag">国产化</span>
+                            <span class="tag">云边端</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">研发进度 75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 低空大数据平台 -->
+                <div class="product-card" data-product="data">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48"><ellipse cx="24" cy="36" rx="16" ry="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 28v-8c0-4.4 7.2-8 16-8s16 3.6 16 8v8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 20v-8c0-4.4 7.2-8 16-8s16 3.6 16 8v8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>低空大数据平台</h3>
+                        <p class="card-subtitle">Big Data Platform</p>
+                        <p class="card-desc">空天地多源数据汇聚融合，支持AI智能助手、可信空间、洞察决策，打造低空数据中枢</p>
+                        <div class="card-tags">
+                            <span class="tag tag-primary">V1.0已发布</span>
+                            <span class="tag">多源融合</span>
+                            <span class="tag">可信空间</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="progress-text">V2.0研发中 60%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 星瞳智能体开发平台 -->
+                <div class="product-card" data-product="agent">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48"><rect x="12" y="8" width="24" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="20" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 32h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>星瞳智能体开发平台</h3>
+                        <p class="card-subtitle">Agent Development Platform</p>
+                        <p class="card-desc">多角色多任务多智能体编排，支撑智能选址、飞行管控、反恐袭对抗等场景智能体快速构建</p>
+                        <div class="card-tags">
+                            <span class="tag tag-primary">V1.5已发布</span>
+                            <span class="tag">多智能体</span>
+                            <span class="tag">低空业务</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">研发进度 75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 数字孪生底座 -->
+                <div class="product-card" data-product="digital">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48"><path d="M24 4l20 10v20l-20 10L4 34V14z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 14l20 10 20-10M24 24v20" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>数字孪生底座</h3>
+                        <p class="card-subtitle">Digital Twin Foundation</p>
+                        <p class="card-desc">AI驱动的高级建模技术，支持图生3D、3DGS、矢量编辑，提供SaaS化模型构建服务</p>
+                        <div class="card-tags">
+                            <span class="tag tag-primary">V1.5已发布</span>
+                            <span class="tag">3DGS</span>
+                            <span class="tag">SaaS</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">研发进度 75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 转化进展 -->
+    <section id="progress" class="progress">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Transformation Progress</span>
+                <h2 class="section-title">产业转化进展</h2>
+                <p class="section-desc">从技术研发到商业落地的完整闭环</p>
+            </div>
+
+            <div class="progress-dashboard">
+                <!-- 左侧：转化漏斗图 -->
+                <div class="progress-chart">
+                    <h3 class="chart-title">项目转化漏斗</h3>
+                    <div class="funnel-chart">
+                        <div class="funnel-level level-1">
+                            <span class="level-label">商机储备</span>
+                            <span class="level-value">23亿+</span>
+                            <div class="level-bar" style="--width: 100%"></div>
+                        </div>
+                        <div class="funnel-level level-2">
+                            <span class="level-label">重大课题</span>
+                            <span class="level-value">26项</span>
+                            <div class="level-bar" style="--width: 65%"></div>
+                        </div>
+                        <div class="funnel-level level-3">
+                            <span class="level-label">在研项目</span>
+                            <span class="level-value">35+个</span>
+                            <div class="level-bar" style="--width: 50%"></div>
+                        </div>
+                        <div class="funnel-level level-4">
+                            <span class="level-label">年度目标</span>
+                            <span class="level-value">7200万</span>
+                            <div class="level-bar" style="--width: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右侧：关键指标 -->
+                <div class="progress-metrics">
+                    <div class="metric-card">
+                        <div class="metric-icon">🎯</div>
+                        <div class="metric-value">59</div>
+                        <div class="metric-label">售前项目</div>
+                        <div class="metric-trend trend-up">↑ 商机储备充足</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">🏙️</div>
+                        <div class="metric-value">35+</div>
+                        <div class="metric-label">在研项目</div>
+                        <div class="metric-trend trend-up">↑ 覆盖15+省市</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">🔬</div>
+                        <div class="metric-value">26</div>
+                        <div class="metric-label">重大课题</div>
+                        <div class="metric-trend trend-up">↑ 国拨2.74亿</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">💰</div>
+                        <div class="metric-value">23亿+</div>
+                        <div class="metric-label">商机水库</div>
+                        <div class="metric-trend trend-up">↑ 低空经济为主</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 转化时间轴 -->
+            <div class="progress-timeline">
+                <h3 class="chart-title">2026年关键里程碑</h3>
+                <div class="timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024-2025</span>
+                            <h4>重大课题立项</h4>
+                            <p>高质量数据集试点(1368万)、受限项目(1.1亿)、国重点研发计划(1676万)等重大课题落地实施</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q1 2026</span>
+                            <h4>V1.0-V1.5 产品发布</h4>
+                            <p>低空大数据平台V1.0、星瞳V1.5、训推V1.5、智能体V1.5、数字孪生V1.5正式发布</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item active">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q2 2026</span>
+                            <h4>标杆项目集中交付</h4>
+                            <p>北京1212(500万)、合肥国先(152万)、汉中低空(500万)、衡水(1.39亿)等项目交付验收</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q3 2026</span>
+                            <h4>V2.0 全面升级</h4>
+                            <p>星瞳V2.0、算法集V2.0、训推V2.0、智能地球V1.0、大数据V2.0发布</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Q4 2026</span>
+                            <h4>年度目标达成</h4>
+                            <p>营收目标7200万，覆盖15+省市，30+商业项目，构建低空经济生态闭环</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术创新 -->
+    <section id="innovation" class="innovation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technology Innovation</span>
+                <h2 class="section-title">技术创新</h2>
+                <p class="section-desc">核心技术突破与知识产权布局</p>
+            </div>
+
+            <div class="innovation-grid">
+                <div class="inno-card patents">
+                    <h3>专利布局</h3>
+                    <div class="inno-chart-container">
+                        <canvas id="patentChart"></canvas>
+                    </div>
+                    <div class="inno-stats">
+                        <div class="inno-stat">
+                            <span class="inno-num">50+</span>
+                            <span class="inno-label">专利申请</span>
+                        </div>
+                        <div class="inno-stat">
+                            <span class="inno-num">30+</span>
+                            <span class="inno-label">已授权</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inno-card papers">
+                    <h3>学术论文</h3>
+                    <div class="inno-list">
+                        <div class="paper-item">
+                            <span class="paper-year">2026</span>
+                            <span class="paper-title">多模态大模型在空天信息智能解译中的应用</span>
+                            <span class="paper-journal">遥感学报</span>
+                        </div>
+                        <div class="paper-item">
+                            <span class="paper-year">2026</span>
+                            <span class="paper-title">面向低空经济的数字孪生技术框架研究</span>
+                            <span class="paper-journal">测绘学报</span>
+                        </div>
+                        <div class="paper-item">
+                            <span class="paper-year">2025</span>
+                            <span class="paper-title">时空知识图谱驱动的智能决策方法</span>
+                            <span class="paper-journal">计算机研究与发展</span>
+                        </div>
+                        <div class="paper-item">
+                            <span class="paper-year">2025</span>
+                            <span class="paper-title">多智能体协同的低空管控系统架构</span>
+                            <span class="paper-journal">航空学报</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inno-card tech-stack">
+                    <h3>核心技术栈</h3>
+                    <div class="tech-cloud">
+                        <span class="tech-item tech-core">星瞳大模型</span>
+                        <span class="tech-item tech-core">时空嵌入场</span>
+                        <span class="tech-item tech-core">多智能体协同</span>
+                        <span class="tech-item">3DGS重建</span>
+                        <span class="tech-item">视频理解</span>
+                        <span class="tech-item">全要素提取</span>
+                        <span class="tech-item">云边端部署</span>
+                        <span class="tech-item">知识图谱</span>
+                        <span class="tech-item">国产化适配</span>
+                        <span class="tech-item">可信空间</span>
+                        <span class="tech-item">数字孪生</span>
+                        <span class="tech-item">智能选址</span>
+                    </div>
+                </div>
+
+                <div class="inno-card breakthrough">
+                    <h3>技术突破</h3>
+                    <div class="breakthrough-list">
+                        <div class="break-item">
+                            <div class="break-icon">🎯</div>
+                            <div class="break-content">
+                                <h4>多模态视频理解</h4>
+                                <p>支持10s+视频端到端理解，目标跟踪与动作识别</p>
+                            </div>
+                        </div>
+                        <div class="break-item">
+                            <div class="break-icon">🧠</div>
+                            <div class="break-content">
+                                <h4>多智能体协同框架</h4>
+                                <p>感知-认知-决策闭环，工具调用准确率>90%</p>
+                            </div>
+                        </div>
+                        <div class="break-item">
+                            <div class="break-icon">🚀</div>
+                            <div class="break-content">
+                                <h4>国产化训推闭环</h4>
+                                <p>海光DCU+天数智芯全栈适配</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行业动态 -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Industry Insights</span>
+                <h2 class="section-title">行业动态</h2>
+                <p class="section-desc">低空经济与商业航天最新趋势</p>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card featured">
+                    <div class="news-image">
+                        <div class="news-placeholder">低空经济</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-tag">政策</span>
+                        <h3>航空航天首次定义为"新兴支柱产业"</h3>
+                        <p>2026年政府工作报告中，航空航天首次被定义为"新兴支柱产业"，卫星互联网首次单独提及，明确加快卫星互联网建设，推进商业航天高质量发展...</p>
+                        <span class="news-date">2026.03</span>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <span class="news-tag">市场</span>
+                    <h4>中国商业航天2025年发射50次创新高</h4>
+                    <p>占全年发射总数54%，海南商业航天发射场正式启用...</p>
+                    <span class="news-date">2026.03</span>
+                </div>
+
+                <div class="news-card">
+                    <span class="news-tag">技术</span>
+                    <h4>SpaceX星舰V3版即将首飞</h4>
+                    <p>推力翻倍，计划实现每小时发射一次的高频能力...</p>
+                    <span class="news-date">2026.03</span>
+                </div>
+
+                <div class="news-card">
+                    <span class="news-tag">应用</span>
+                    <h4>千帆星座进入巴西市场</h4>
+                    <p>已与30多国启动业务洽谈，计划Q4启动商业运营...</p>
+                    <span class="news-date">2026.02</span>
+                </div>
+
+                <div class="news-card">
+                    <span class="news-tag">融资</span>
+                    <h4>2025年商业航天融资186亿元</h4>
+                    <p>同比增长32%，其中国资产业基金成为主力...</p>
+                    <span class="news-date">2026.01</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目案例 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Project Cases</span>
+                <h2 class="section-title">项目案例</h2>
+                <p class="section-desc">标杆项目实践与行业深度赋能</p>
+            </div>
+
+            <div class="projects-map">
+                <div class="map-container">
+                    <div class="china-map">
+                        <!-- 地图上的项目标记 -->
+                        <div class="project-marker" style="left: 65%; top: 35%;" data-city="北京">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">北京1212</div>
+                        </div>
+                        <div class="project-marker" style="left: 70%; top: 55%;" data-city="合肥">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">合肥国先</div>
+                        </div>
+                        <div class="project-marker" style="left: 55%; top: 50%;" data-city="汉中">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">汉中低空</div>
+                        </div>
+                        <div class="project-marker" style="left: 68%; top: 75%;" data-city="深圳">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">罗湖区</div>
+                        </div>
+                        <div class="project-marker" style="left: 62%; top: 42%;" data-city="衡水">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">衡水</div>
+                        </div>
+                        <div class="project-marker" style="left: 50%; top: 38%;" data-city="巴彦淖尔">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">巴彦淖尔</div>
+                        </div>
+                        <div class="project-marker" style="left: 75%; top: 45%;" data-city="滨州">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">滨州</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-list">
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h4>北京1212低空安全项目</h4>
+                            <span class="project-status status-active">进行中</span>
+                        </div>
+                        <p>合同金额500万，目标融合、智能决策、低空反恐袭对抗智能体开发</p>
+                        <div class="project-tags">
+                            <span>星瞳大模型</span>
+                            <span>训推平台</span>
+                            <span>智能体平台</span>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h4>汉中低空经济基础设施</h4>
+                            <span class="project-status status-active">进行中</span>
+                        </div>
+                        <p>合同金额500万，训推平台部署、算法API支撑、数字孪生底座</p>
+                        <div class="project-tags">
+                            <span>训推平台</span>
+                            <span>算法集</span>
+                            <span>数字孪生</span>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h4>衡水桃城区空天地一体化</h4>
+                            <span class="project-status status-active">进行中</span>
+                        </div>
+                        <p>合同金额1.395亿，低空反无平台、数字孪生底座、低空气象服务</p>
+                        <div class="project-tags">
+                            <span>低空安全</span>
+                            <span>数字孪生</span>
+                            <span>智能体</span>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h4>合肥国先低空大数据平台</h4>
+                            <span class="project-status status-completed">已交付</span>
+                        </div>
+                        <p>合同金额152万，空域一张图、数据汇聚融合、多维度查询分析</p>
+                        <div class="project-tags">
+                            <span>大数据平台</span>
+                            <span>数字孪生</span>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h4>马来西亚SmartTree项目</h4>
+                            <span class="project-status status-active">进行中</span>
+                        </div>
+                        <p>合同金额57.5万，树木智能识别、数字孪生底座、低空应用算法</p>
+                        <div class="project-tags">
+                            <span>国际化</span>
+                            <span>星瞳大模型</span>
+                            <span>算法集</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 重大课题 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Major Research Projects</span>
+                <h2 class="section-title">重大课题</h2>
+                <p class="section-desc">国家重大科研项目与核心攻关任务</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card major">
+                    <div class="project-badge">国家发改委</div>
+                    <h3>受限项目-空天信息处理与智能计算系统</h3>
+                    <p class="project-amount">国拨 1.1亿 / 总投 2.9亿</p>
+                    <p class="project-desc">空天大数据处理基础设施、高质量空天信息数据集构建、空天信息智能计算平台研发、网络运营服务平台研制</p>
+                    <div class="project-progress">
+                        <span class="progress-label">实施中</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 25%"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-card major">
+                    <div class="project-badge">国家发改委</div>
+                    <h3>行业高质量数据集试点</h3>
+                    <p class="project-amount">国拨 1368万 / 总投 9000万</p>
+                    <p class="project-desc">面向农业的空天高质量数据集；引接融合300余颗卫星数据源，形成PB级预训练集、60+TB微调数据集，支持农业大模型训练</p>
+                    <div class="project-progress">
+                        <span class="progress-label">实施中</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 60%"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-card major">
+                    <div class="project-badge">安徽省科技厅</div>
+                    <h3>基于国产化软硬件的空天信息处理系统研制</h3>
+                    <p class="project-amount">国拨 4000万 / 总投 2.2亿</p>
+                    <p class="project-desc">四域融合基础空间计算环境、双引擎空间数据库构建、空天数据专业处理软件研发，打造国产化空天信息处理全栈能力</p>
+                    <div class="project-progress">
+                        <span class="progress-label">实施中</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 50%"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-card major">
+                    <div class="project-badge">国家科技部</div>
+                    <h3>实景三维地理实体高效建模关键技术</h3>
+                    <p class="project-amount">国拨 176万 / 总投 1676万</p>
+                    <p class="project-desc">智能调度计算环境、三维时空基准承载系统、三维高效生产平台、示范应用场景集成，支撑实景三维中国建设</p>
+                    <div class="project-progress">
+                        <span class="progress-label">实施中</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 30%"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-card major">
+                    <div class="project-badge">北京科技委</div>
+                    <h3>低空智能博弈平台</h3>
+                    <p class="project-amount">700万 / 总投 3200万</p>
+                    <p class="project-desc">低空智能博弈技术攻关，联合体：慧安、地球、防务、星光、创奇协同研发，支撑北京1212项目</p>
+                    <div class="project-progress">
+                        <span class="progress-label">实施中</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 40%"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-card major">
+                    <div class="project-badge">新疆工信厅</div>
+                    <h3>新疆空天信息支撑服务能力关键技术攻关</h3>
+                    <p class="project-amount">380万 / 总投 900万</p>
+                    <p class="project-desc">遥感数据基础处理支撑系统、空天信息治理中台、空天信息关联和可视化分析、空天信息服务门户</p>
+                    <div class="project-progress">
+                        <span class="progress-label">申报中</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 10%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-summary">
+                <div class="summary-item">
+                    <span class="summary-num">26</span>
+                    <span class="summary-label">重大课题总数</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-num">2.74亿</span>
+                    <span class="summary-label">国拨经费合计</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-num">19.3亿</span>
+                    <span class="summary-label">总盘子规模</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg viewBox="0 0 40 40" class="logo-icon">
+                            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <ellipse cx="20" cy="20" rx="8" ry="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <line x1="2" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <span>智能地球研究院</span>
+                    </div>
+                    <p>Intelligent Earth Lab</p>
+                    <p>构建智能地球 · 定义低空未来</p>
+                </div>
+                <div class="footer-links">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="#">智能地球</a></li>
+                        <li><a href="#">星瞳大模型</a></li>
+                        <li><a href="#">低空训推平台</a></li>
+                        <li><a href="#">低空大数据平台</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li><a href="#">低空安全</a></li>
+                        <li><a href="#">城市治理</a></li>
+                        <li><a href="#">自然资源</a></li>
+                        <li><a href="#">应急管理</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p>业务合作：contact@intelligent-earth.cn</p>
+                    <p>技术支持：support@intelligent-earth.cn</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 智能地球研究院. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
